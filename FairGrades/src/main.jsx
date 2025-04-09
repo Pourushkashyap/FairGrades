@@ -9,6 +9,8 @@ import Help from './Pages/Help.jsx'
 import Requests from './Pages/Requests.jsx'
 import Home from './Pages/Home.jsx'
 import History from './Pages/History.jsx' 
+import Profile from './Pages/Profile.jsx'
+import Notification from './Pages/Notification.jsx'
 
 const router = createBrowserRouter([
   {
@@ -34,7 +36,15 @@ const router = createBrowserRouter([
       {
         path: '/help',
         element: <Help />,
-      }
+      },
+      {
+        path:'/profile',
+        element:<Profile/>
+      },
+       {
+        path:"/notification",
+        element:<Notification/>
+       }
     ]
   }
 ])
